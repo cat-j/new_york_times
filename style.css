@@ -1,0 +1,395 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----GENERAL RULES-----*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 1em;
+}
+
+p {
+    padding-top: 1em;
+}
+
+small {
+    font-size: 12px;
+    line-height: normal;
+    padding-top: 0.5em;
+    color: #888;
+}
+
+.title-heading {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+a {
+    cursor: pointer;
+}
+
+.title-data {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.news-subtit {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.author {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.metadata time {
+    text-transform: uppercase;
+}
+
+figure * {
+    display: block;
+}
+
+figcaption {
+    padding-top: 1em;
+    font-size: 0.9em;
+    line-height: normal;
+    color: #4f4f4f;
+}
+
+.infographic {
+    border: 1px solid #e0e0e0;
+    border-width: 1px 0 1px 0;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+.infographic-header {
+    font-family: 'Vollkorn', 'Georgia', serif;
+    font-size: 0.9em;
+    color: #4f4f4f;
+    line-height: normal;
+}
+
+.infographic-header h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.snippet-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 0.8em;
+}
+
+.infographic small {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----POSITIONING-----*/
+
+#top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 97%;
+    text-align: center;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #fff;
+    border-bottom: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999999;
+}
+
+#top * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+i {
+    margin-right: 0.5em;
+}
+
+#top li {
+    position: relative;
+    right: 20px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+#top li:hover {
+    background: #f3f3f3;
+}
+
+#top li:last-child {
+    margin-right: 0;
+}
+
+.sitenav {
+    float: left;
+}
+
+.usernav {
+    float: right;
+}
+
+.logo {
+    height: 25px;
+    position: relative;
+    top: 8px;
+}
+
+.sections {
+    padding: 0.4em 0.8em;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.nyt-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(img/favicon.png);
+    background-size: 16px;
+}
+
+.login {
+    padding: 0.4em 0.8em;
+    background: #60829a;
+    color: #fff;
+    border-radius: 0.2em;
+    border: 1px solid #39596e;
+    right: 30px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.login:hover {
+    background: #39596e;
+}
+
+#news-container {
+    width: 960px;
+    margin: 4em auto;
+}
+
+.news-title {
+    font-family: 'Vollkorn', 'Georgia', sans-serif;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.category {
+    top: 0;
+    left: 0;
+    font-weight: 700;
+}
+
+.comments-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.metadata li {
+    float: left;
+    font-size: 0.8em;
+    margin-right: 0.5em;
+}
+
+#news-content {
+    margin-top: 20px;
+    position: relative;
+}
+
+figure {
+    margin: 30px 0;
+}
+
+.main-img-fig {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure iframe {
+    width: 640px;
+    height: 360px;
+}
+
+.news-text > p,
+.news-text > figure,
+.news-footer,
+.news-subtit{
+    position: relative;
+    width: 70%;
+    left: 10%;
+}
+
+.img-container {
+    position: relative;
+}
+
+#inflation-graphic {
+    width: 100%;
+    position: relative;
+}
+
+.info-snippet {
+    width: 225px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.3em;
+    position: absolute;
+}
+
+.info-snippet * {
+    display: inline;
+}
+
+.row-1 {
+    top: 150px;
+}
+
+.row-2 {
+    top: 430px;
+}
+
+.column-2 {
+    left: 245px;
+}
+
+.column-3 {
+    right: 245px;
+}
+
+.column-4 {
+    right: 0;
+}
+
+.line {
+    width: 150px;
+    height: 1px;
+    color: #000;
+}
+
+.article-smallprint {
+    font-family: 'Roboto', sans-serif;
+    line-height: normal;
+    padding-top: 2em;
+    margin-top: 1em;
+}
+
+.news-footer {
+    position: relative;
+    height: 100px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #cbcbcb;
+}
+
+.next {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+
+.next-news {
+    position: absolute;
+    right: 0;
+    font-family: 'Vollkorn', 'Georgia', serif;
+    width: 400px;
+    text-align: right;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.arrow {
+    border-color: transparent transparent transparent #666;
+    border-style: inset inset inset solid;
+    border-width: 4px 0 4px 8px;
+    display: block;
+    height: 0;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    top: 34%;
+    width: 0;
+}
